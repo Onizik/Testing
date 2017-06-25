@@ -13,7 +13,7 @@ namespace Client
 {
     public partial class Menu: Form
     {
-        Client client = new Client();
+        GeneralForm general = new GeneralForm();
         public Menu()
         {
             InitializeComponent();
@@ -23,8 +23,11 @@ namespace Client
         {
             if (login_box.Text != "")
             {
-                client.name = login_box.Text;
+                general.Name = login_box.Text;
                 Error_text.Visible = false;
+                general.ShowDialog();
+                this.Close();
+              
             }
             else Error_text.Visible = true;
         }

@@ -129,10 +129,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox login_box;
         private System.Windows.Forms.Button button_enter;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label Error_text;
+        public System.Windows.Forms.TextBox login_box;
     }
 }
 

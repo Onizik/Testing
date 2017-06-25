@@ -43,6 +43,7 @@
             this.userList.Multiline = true;
             this.userList.Name = "userList";
             this.userList.ReadOnly = true;
+            this.userList.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.userList.Size = new System.Drawing.Size(121, 349);
             this.userList.TabIndex = 0;
             // 
@@ -52,6 +53,7 @@
             this.mainText.Multiline = true;
             this.mainText.Name = "mainText";
             this.mainText.ReadOnly = true;
+            this.mainText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.mainText.Size = new System.Drawing.Size(495, 349);
             this.mainText.TabIndex = 1;
             // 
@@ -115,19 +117,19 @@
             this.Controls.Add(this.userList);
             this.Name = "GeneralForm";
             this.Text = "True messenger";
+            this.Load += new System.EventHandler(this.GeneralForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox userList;
         private System.Windows.Forms.TextBox mainText;
         private System.Windows.Forms.TextBox sendText;
         private System.Windows.Forms.Button buttonSend;
         private System.Windows.Forms.Button buttonEscape;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.TextBox userList;
     }
 }
