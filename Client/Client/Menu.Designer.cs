@@ -1,6 +1,6 @@
 ﻿namespace Client
 {
-    partial class Form1
+    partial class Menu
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -34,6 +34,7 @@
             this.login_box = new System.Windows.Forms.TextBox();
             this.button_enter = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.Error_text = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -75,7 +76,7 @@
             // 
             // button_enter
             // 
-            this.button_enter.Location = new System.Drawing.Point(122, 186);
+            this.button_enter.Location = new System.Drawing.Point(122, 199);
             this.button_enter.Name = "button_enter";
             this.button_enter.Size = new System.Drawing.Size(75, 23);
             this.button_enter.TabIndex = 4;
@@ -92,19 +93,31 @@
             this.linkLabel1.TabIndex = 5;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Creators";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // Form1
+            // Error_text
+            // 
+            this.Error_text.AutoSize = true;
+            this.Error_text.Location = new System.Drawing.Point(83, 173);
+            this.Error_text.Name = "Error_text";
+            this.Error_text.Size = new System.Drawing.Size(164, 13);
+            this.Error_text.TabIndex = 6;
+            this.Error_text.Text = "Wrong name. Fill this field please.";
+            this.Error_text.Visible = false;
+            // 
+            // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(341, 327);
+            this.Controls.Add(this.Error_text);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.button_enter);
             this.Controls.Add(this.login_box);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "Menu";
             this.Text = "True Messenger";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -119,6 +132,7 @@
         private System.Windows.Forms.TextBox login_box;
         private System.Windows.Forms.Button button_enter;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label Error_text;
     }
 }
 

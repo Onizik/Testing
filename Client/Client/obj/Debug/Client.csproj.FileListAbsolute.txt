@@ -1,0 +1,9 @@
+C:\Users\Evgen\Documents\GitHub\Testing\Client\Client\bin\Debug\Client.exe.config
+C:\Users\Evgen\Documents\GitHub\Testing\Client\Client\bin\Debug\Client.exe
+C:\Users\Evgen\Documents\GitHub\Testing\Client\Client\bin\Debug\Client.pdb
+C:\Users\Evgen\Documents\GitHub\Testing\Client\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+C:\Users\Evgen\Documents\GitHub\Testing\Client\Client\obj\Debug\Client.Menu.resources
+C:\Users\Evgen\Documents\GitHub\Testing\Client\Client\obj\Debug\Client.Properties.Resources.resources
+C:\Users\Evgen\Documents\GitHub\Testing\Client\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+C:\Users\Evgen\Documents\GitHub\Testing\Client\Client\obj\Debug\Client.exe
+C:\Users\Evgen\Documents\GitHub\Testing\Client\Client\obj\Debug\Client.pdb
