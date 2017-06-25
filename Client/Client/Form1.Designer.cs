@@ -31,8 +31,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.login_box = new System.Windows.Forms.TextBox();
+            this.button_enter = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
@@ -65,22 +65,23 @@
             this.label3.Size = new System.Drawing.Size(0, 20);
             this.label3.TabIndex = 2;
             // 
-            // textBox1
+            // login_box
             // 
-            this.textBox1.Location = new System.Drawing.Point(86, 136);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(160, 29);
-            this.textBox1.TabIndex = 3;
+            this.login_box.Location = new System.Drawing.Point(86, 136);
+            this.login_box.Multiline = true;
+            this.login_box.Name = "login_box";
+            this.login_box.Size = new System.Drawing.Size(160, 29);
+            this.login_box.TabIndex = 3;
             // 
-            // button1
+            // button_enter
             // 
-            this.button1.Location = new System.Drawing.Point(122, 186);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Enter";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button_enter.Location = new System.Drawing.Point(122, 186);
+            this.button_enter.Name = "button_enter";
+            this.button_enter.Size = new System.Drawing.Size(75, 23);
+            this.button_enter.TabIndex = 4;
+            this.button_enter.Text = "Enter";
+            this.button_enter.UseVisualStyleBackColor = true;
+            this.button_enter.Click += new System.EventHandler(this.button1_Click);
             // 
             // linkLabel1
             // 
@@ -98,8 +99,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(341, 327);
             this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button_enter);
+            this.Controls.Add(this.login_box);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -115,8 +116,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox login_box;
+        private System.Windows.Forms.Button button_enter;
         private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
