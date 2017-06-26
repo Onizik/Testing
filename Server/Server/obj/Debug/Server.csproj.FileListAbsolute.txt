@@ -7,3 +7,12 @@ C:\Ilya\VS_Projects\C#\GitHub\Testing\Server\Server\obj\Debug\Server.Properties.
 C:\Ilya\VS_Projects\C#\GitHub\Testing\Server\Server\obj\Debug\Server.csproj.GenerateResource.Cache
 C:\Ilya\VS_Projects\C#\GitHub\Testing\Server\Server\obj\Debug\Server.exe
 C:\Ilya\VS_Projects\C#\GitHub\Testing\Server\Server\obj\Debug\Server.pdb
+C:\Ilya\VS_Projects\C#\Server\Server\bin\Debug\Server.exe.config
+C:\Ilya\VS_Projects\C#\Server\Server\obj\Debug\Server.exe
+C:\Ilya\VS_Projects\C#\Server\Server\obj\Debug\Server.pdb
+C:\Ilya\VS_Projects\C#\Server\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Ilya\VS_Projects\C#\Server\Server\obj\Debug\Server.Properties.Resources.resources
+C:\Ilya\VS_Projects\C#\Server\Server\obj\Debug\Server.csproj.GenerateResource.Cache
+C:\Ilya\VS_Projects\C#\Server\Server\bin\Debug\Server.exe
+C:\Ilya\VS_Projects\C#\Server\Server\bin\Debug\Server.pdb
+C:\Ilya\VS_Projects\C#\Server\Server\obj\Debug\Server.MainForm.resources
