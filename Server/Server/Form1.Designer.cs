@@ -112,6 +112,7 @@
             this.exitButton.TabIndex = 2;
             this.exitButton.Text = "Close & Exit";
             this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // stopButton
             // 
@@ -122,6 +123,7 @@
             this.stopButton.TabIndex = 1;
             this.stopButton.Text = "Server stop";
             this.stopButton.UseVisualStyleBackColor = true;
+            this.stopButton.Click += new System.EventHandler(this.stopButton_Click);
             // 
             // startButton
             // 

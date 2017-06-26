@@ -15,11 +15,14 @@ namespace Server
     public partial class MainForm : Form
     {
         List<Client> clients;
+        List<Thread> clientsThreads;
+        Thread listeningThread;
         public MainForm()
         {
             InitializeComponent();
             messageTextBox.Text = "You can type here...";
             clients = new List<Client>();
+            clientsThreads = new List<Thread>();
         }
 
         private void MessageTextBox_Enter(object sender, EventArgs e)
@@ -36,7 +39,7 @@ namespace Server
 
         private void startButton_Click(object sender, EventArgs e)
         {
-            Thread listeningThread = new Thread(new ThreadStart(StartListening));
+            listeningThread = new Thread(new ThreadStart(StartListening));
             listeningThread.Start();
         }
         public void SendMessage(string Message)
@@ -82,8 +85,33 @@ namespace Server
                 }
                 logTextBox.Text += client.GetNickname() + " connected.\n";
                 Thread clientThread = new Thread(new ParameterizedThreadStart(RecieveMessage));
+                clientsThreads.Add(clientThread);
                 clientThread.Start(client);
             }
+        }
+
+        private void stopButton_Click(object sender, EventArgs e)
+        {
+            listeningThread.Interrupt();
+            logTextBox.Text = "Sockets listening stopped.\n";
+            for(int i = 0; i<clientsThreads.Count; i++)
+            {
+                clientsThreads[i].Interrupt();
+            }
+            
+            int AmountOfClients = clients.Count;
+            for (int i = 0; i<AmountOfClients; i++)
+            {
+                clients[0].GetSocket().Close();
+                clients.RemoveAt(0);
+            }
+            logTextBox.Text = "All clients stopped.\n";
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            stopButton_Click(sender, e);
+            Application.Exit();
         }
     }
 }
