@@ -37,6 +37,7 @@ namespace Server
         private void startButton_Click(object sender, EventArgs e)
         {
             Thread listeningThread = new Thread(new ThreadStart(StartListening));
+            listeningThread.Start();
         }
         public void SendMessage(string Message)
         {
